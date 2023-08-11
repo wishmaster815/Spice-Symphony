@@ -1,0 +1,53 @@
+<svg viewBox="20 20 55 55" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="cyanSpotLarge" cx="0.5" cy="0.5" r="0.5" fx="0.8" fy="0.8" spreadMethod="pad">
+              <stop offset="0%" stop-color="rgb(0, 196, 204)" stop-opacity="1"/>
+              <stop offset="100%" stop-color="rgb(0, 196, 204)" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="cyanSpot" cx="0.5" cy="0.5" r="0.5" fx="0.2" fy="0.2" spreadMethod="pad">
+              <stop offset="0%" stop-color="rgb(0, 196, 204)" stop-opacity="0.75"/>
+              <stop offset="100%" stop-color="rgb(0, 196, 204)" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="purpleSpotLarge" cx="0.5" cy="0.5" r="0.5" fx="0.8" fy="0.8" spreadMethod="pad">
+              <stop offset="0%" stop-color="rgb(125, 42, 232)" stop-opacity="1"/>
+              <stop offset="100%" stop-color="rgb(125, 42, 232)" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="purpleSpot" cx="0.5" cy="0.5" r="0.5" fx="0.2" fy="0.2" spreadMethod="pad">
+              <stop offset="0%" stop-color="rgb(125, 42, 232)" stop-opacity="0.85"/>
+              <stop offset="100%" stop-color="rgb(125, 42, 232)" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <!-- Average the RGB values of the Cyan & Purple brand colors -> Blue rect background -->
+          <rect x="0" y="0" width="100" height="100" fill="rgb(62.5, 119, 218)"/>
+          <g class="animation-container">
+            <!-- Initial Rotation -->
+            <g transform="rotate(25)">
+              <!-- Large Spots -->
+              <g transform="rotate(0) scale(2) translate(-40, -40)">
+                <rect x="0" y="0" width="100" height="100" fill="url(#cyanSpotLarge)"/>
+              </g>
+              <g transform="rotate(180) scale(2) translate(-40, -40)">
+                <rect x="0" y="0" width="100" height="100" fill="url(#cyanSpotLarge)"/>
+              </g>
+              <g transform="rotate(90) scale(1.5) translate(-25, -25)">
+                <rect x="0" y="0" width="100" height="100" fill="url(#purpleSpotLarge)"/>
+              </g>
+              <g transform="rotate(270) scale(1.5) translate(-25, -25)">
+                <rect x="0" y="0" width="100" height="100" fill="url(#purpleSpotLarge)"/>
+              </g>
+              <!-- Small spots -->
+              <g transform="rotate(0) translate(-10, -10)">
+                <rect x="0" y="0" width="66" height="66" fill="url(#purpleSpot"/>
+              </g>
+              <g transform="rotate(180) translate(-10, -10)">
+                <rect x="0" y="0" width="66" height="66" fill="url(#purpleSpot"/>
+              </g>
+              <g transform="rotate(90) scale(1.2) translate(-10, -10)">
+                <rect x="0" y="0" width="66" height="66" fill="url(#cyanSpot)"/>
+              </g>
+              <g transform="rotate(270) scale(1.2) translate(-10, -10)">
+                <rect x="0" y="0" width="66" height="66" fill="url(#cyanSpot)"/>
+              </g>
+            </g>
+          </g>
+        </svg>
