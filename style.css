@@ -1,582 +1,679 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: default;
 }
 /* ---------- Page 1 CSS ----------  */
 #page1 {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    
-    /* background-color: rebeccapurple; */
-    /* position: absolute; */
-  }
-  #main video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
 
-  }
-  
-  #page1-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* top: 15%; */
-    /* padding-block: 5%; */
-    
-  }
+  /* background-color: rebeccapurple; */
+  /* position: absolute; */
+}
+#main video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#page1-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* top: 15%; */
+  /* padding-block: 5%; */
+}
+#page1-content h1 {
+  font-family: "Hammersmith One", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-size: 7rem;
+  margin-block: 10%;
+  font-weight: 900;
+  position: relative;
+  letter-spacing: 1%;
+}
+#page1-content h2 {
+  font-family: "Solway", serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 900;
+  position: relative;
+  color: white;
+  margin-top: 10%;
+}
+
+/* Page1 media queries CSS */
+@media only screen and (max-width: 992px) {
   #page1-content h1 {
-      font-family: "Hammersmith One", sans-serif;
-      text-transform: uppercase;
-      text-align: center;
-    color: white;
-    font-size: 7rem;
-    margin-block: 10%;
-    font-weight: 900;
-    position: relative;
-    letter-spacing: 1%;
+    font-size: 5rem;
+    margin-block: 0;
+    margin-top: 5%;
+    /* margin-bottom: 5%; */
   }
   #page1-content h2 {
-      font-family: 'Solway', serif;
-    text-align: center;
-    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 20%;
+    padding-block: 0;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  #page1-content {
+    padding-top: 20%;
+  }
+  #page1-content h1 {
+    font-size: 5rem;
+    margin-block: 30%;
+    margin-top: 20%;
+  }
+  #page1-content h2 {
+    font-size: 2rem;
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  #page1-content {
+    padding-top: 40%;
+  }
+  #page1-content h1 {
     font-size: 4rem;
-    font-weight: 900;
-    position: relative;
-    color: white;  
-    margin-top: 10%;
+    margin-block: 50%;
   }
-  
-  /* Page1 media queries CSS */
-  @media only screen and (max-width: 992px){
-      #page1-content h1{
-          font-size: 5rem;
-          margin-block: 0;
-          margin-top: 5%;
-          /* margin-bottom: 5%; */
-      }
-      #page1-content h2{
-          font-size: 2rem;
-        margin-top: 20%;
-        padding-block: 0;
-      }
+  #page1-content h2 {
+    font-size: 1.76rem;
   }
-  
-  @media only screen and (max-width: 440px){
-      #page1-content{
-          padding-top: 20%;
-      }
-      #page1-content h1{
-          font-size: 5rem;
-          margin-block: 30%;
-          margin-top: 20%;
-      }
-      #page1-content h2{
-          font-size: 2rem;
-        margin-top: 5%;
-      }
-  }
-  
-  @media only screen and (max-width: 340px){
-      #page1-content{
-          padding-top: 40%;
-      }
-      #page1-content h1{
-          font-size: 4rem;
-          margin-block: 50%;
-      }
-      #page1-content h2{
-          font-size: 1.76rem;
-  
-      }
-  }
-  
-  /* Page 1 CSS End */
-  
-  
+}
+
+/* Page 1 CSS End */
+
 /* --------------------------------Page 2 CSS begins here------------------------------  */
 #page2 {
-    width: 100%;
-    padding: 5% 10%;
-    background-color: #ffeede;
-    /* display: block; */
-    position: relative;
+  width: 100%;
+  padding: 5% 10%;
+  background-color: #ffeede;
+  /* display: block; */
+  position: relative;
 }
 
 #imgs h2 {
-    display: none;
-    font-family: 'Hammersmith One', sans-serif;
+  display: none;
+  font-family: "Hammersmith One", sans-serif;
 }
 
 #page2 img {
-    /* display: inline; */
-    position: absolute;
+  /* display: inline; */
+  position: absolute;
 }
 
 .Rings {
-    height: 67%;
-    width: 33%;
-    rotate: 90deg;
-    /* display: none; */
+  height: 67%;
+  width: 33%;
+  rotate: 90deg;
+  /* display: none; */
 }
 
 #Ring2 {
-    left: 15%;
+  left: 15%;
 }
 
 #food-1 {
-    height: 45%;
-    width: 16%;
-    top: 12%;
+  height: 45%;
+  width: 16%;
+  top: 12%;
 
-    object-fit: cover;
+  object-fit: cover;
 }
 
 #food-2 {
-    height: 45%;
-    width: 16%;
-    object-fit: cover;
-    top: 38%;
-    left: 32%;
+  height: 45%;
+  width: 16%;
+  object-fit: cover;
+  top: 38%;
+  left: 32%;
 }
 
 #page2Txt {
-    padding: 2% 7%;
+  padding: 2% 7%;
 }
 
 #page2Txt h2 {
-    font-size: 2.5rem;
-    font-family: 'Hammersmith One', sans-serif;
+  font-size: 2.5rem;
+  font-family: "Hammersmith One", sans-serif;
 }
 
 #page2Txt p {
-    margin-top: 30px;
-    font-size: 1.2rem;
-    font-family: 'Hanken Grotesk', sans-serif;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 #page2Txt button {
-    margin: 15px 0;
-    border-radius: 0;
-    font-family: 'Hanken Grotesk', sans-serif;
+  margin: 15px 0;
+  border-radius: 0;
+  font-family: "Hanken Grotesk", sans-serif;
 }
 
 /* Media Queries page2 */
-@media only screen and (max-width:992px) {
-    #imgs img {
-        position: static;
-        /* text-align: center; */
-        height: 100%;
-        width: 40%;
-        margin: 20px auto;
-        padding: 10px;
+@media only screen and (max-width: 992px) {
+  #imgs img {
+    position: static;
+    /* text-align: center; */
+    height: 100%;
+    width: 40%;
+    margin: 20px auto;
+    padding: 10px;
+  }
 
-    }
+  #page2 {
+    text-align: center;
+  }
+  #page2 p {
+    text-align: left;
+  }
 
-    #page2 {
-        text-align: center;
-    }
-    #page2 p{
-        text-align: left;
-    }
+  #imgs {
+    margin-bottom: 10px;
+    height: fit-content;
+  }
 
-    #imgs {
-        margin-bottom: 10px;
-        height: fit-content;
-    }
+  #imgs h2 {
+    display: block;
+    font-size: 2.3rem;
+  }
 
-    #imgs h2 {
-        display: block;
-        font-size: 2.3rem;
-    }
+  .Rings {
+    display: none;
+  }
+  #page2Txt {
+    padding: 2% 0;
+  }
+  #page2Txt h2 {
+    display: none;
+  }
 
-    .Rings {
-        display: none;
-    }
-    #page2Txt{
-        padding: 2% 0;
-    }
-    #page2Txt h2 {
-        display: none;
-    }
-
-    #page2Txt p {
-        font-size: 1.1rem;
-    }
+  #page2Txt p {
+    font-size: 1.1rem;
+  }
 }
 
-@media only screen and (max-width:600px) {
-    #imgs img {
-        position: static;
-        /* text-align: center; */
-        height: 100%;
-        width: 100%;
-        margin: auto;
-        padding: 10px;
+@media only screen and (max-width: 600px) {
+  #imgs img {
+    position: static;
+    /* text-align: center; */
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
 
-    }
+  #imgs {
+    margin-bottom: 20px;
+  }
 
-    #imgs {
-        margin-bottom: 20px;
+  .Rings {
+    display: none;
+  }
 
-    }
+  #imgs h2 {
+    margin-bottom: 20px;
+  }
 
-    .Rings {
-        display: none;
-    }
+  #page2Txt p {
+    font-size: 1.1rem;
+    margin-top: 0px;
+  }
 
-    #imgs h2 {
-        margin-bottom: 20px;
-    }
-
-    #page2Txt p {
-        font-size: 1.1rem;
-        margin-top: 0px;
-    }
-
-    #page2Txt {
-        padding: 0 4%;
-
-    }
+  #page2Txt {
+    padding: 0 4%;
+  }
 }
 
-@media only screen and (max-width:440px) {
-    #imgs h2 {
-        font-size: 1.8rem;
-    }
+@media only screen and (max-width: 440px) {
+  #imgs h2 {
+    font-size: 1.8rem;
+  }
 
-    #page2Txt p {
-        font-size: 0.8rem;
-    }
+  #page2Txt p {
+    font-size: 0.8rem;
+  }
 
-    #page2Txt button {
-        font-size: 0.8rem;
-        width: 100%;
-    }
+  #page2Txt button {
+    font-size: 0.8rem;
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width:340px) {
-    #imgs h2 {
-        font-size: 1.5rem;
-    }
+@media only screen and (max-width: 340px) {
+  #imgs h2 {
+    font-size: 1.5rem;
+  }
 
-    #page2Txt p {
-        font-size: 0.7rem;
+  #page2Txt p {
+    font-size: 0.7rem;
+  }
 
-    }
+  #page2 {
+    padding: 5% 5%;
+  }
 
-    #page2 {
-        padding: 5% 5%;
-    }
-
-    #page2Txt button {
-        font-size: 0.7rem;
-        margin: 5px 0;
-    }
+  #page2Txt button {
+    font-size: 0.7rem;
+    margin: 5px 0;
+  }
 }
 
 /* ----------------------------------Page 2 End--------------------------------------------- */
 
-
-
-
 /* ----------------------------------Page 3 CSS begins here--------------------------------------------- */
 
+#page3 {
+  background-color: ffeede;
+  padding: 5% 10%;
+  width: 100%;
+  /* position: relative; */
+  margin: auto;
+  display: flex;
+}
+#page3Img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-#page3{
-    background-color: ffeede;
-    padding: 5% 10%;
-    width:100%;
-    /* position: relative; */
-    margin: auto;
-    display: flex;
-    
+  text-align: center;
 }
-#page3Img{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
-    text-align: center;
+#appet {
+  text-align: center;
 }
-#appet
-{
-    text-align: center;
-}
-#appet img{
-    height: 500px;
-    width: 100%;
-    object-fit: cover;
+#appet img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
 }
 
-.col-lg-8 p,.col-lg-8 button{
-    display: none;
+.col-lg-8 p,
+.col-lg-8 button {
+  display: none;
 }
-.col-lg-8 button{
-    border-radius: 0;
+.col-lg-8 button {
+  border-radius: 0;
 }
-.page3Img1 img,.page3Img2 img{
-    height: 230px;
-    width: 100%;
-    object-fit: cover;
-    
+.page3Img1 img,
+.page3Img2 img {
+  height: 230px;
+  width: 100%;
+  object-fit: cover;
 }
-#page3Txt{
-    padding: 3%;
-    
+#page3Txt {
+  padding: 3%;
 }
-#page3Txt h2{
-    font-size: 2.5rem;
-    font-family: 'Hammersmith One', sans-serif;
+#page3Txt h2 {
+  font-size: 2.5rem;
+  font-family: "Hammersmith One", sans-serif;
 }
 #page3Txt p {
-    margin-top: 15px;
-    font-size: 1.2rem;
-    font-family: 'Hanken Grotesk', sans-serif;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-family: "Hanken Grotesk", sans-serif;
 }
-#page3Txt button{
-    border-radius: 0;
-    margin-top: 10px;
+#page3Txt button {
+  border-radius: 0;
+  margin-top: 10px;
 }
-#appet h4,#page3Img h4{
-    font-family:'Hammersmith One', sans-serif ;
-    font-size: 1.4rem;
-    text-decoration: underline;
+#appet h4,
+#page3Img h4 {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.4rem;
+  text-decoration: underline;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+  .page3Img1 img,
+  .page3Img2 img {
+    height: 120px;
+    width: 80%;
+    margin: 0;
+  }
+  .col-lg-8 {
+    padding: 0;
+    margin: 0;
+  }
+  #page3Txt {
+    padding: 0;
+    margin: 0;
+  }
+  #appet img {
+    height: 300px;
+    width: 85%;
+  }
+  #page3Txt h2 {
+    font-size: 2.3rem;
+  }
+  #page3Txt p,
+  #page3Txt button {
+    display: none;
+  }
+  #appet h4,
+  #page3Img h4 {
+    font-size: 1.1rem;
+  }
+  .col-lg-8 p,
+  .col-lg-8 button {
+    display: block;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .page3Img1 img,
+  .page3Img2 img {
+    height: 170px;
+    width: 60%;
+    margin-top: 25px;
+  }
+  #appet img {
+    height: 170px;
+    width: 60%;
+    margin-top: 25px;
+  }
+  #page3Txt h2 {
     text-align: center;
-    letter-spacing: 1px;
-    margin-top: 10px;
-}
-
-@media only screen and (max-width:992px)
-{
-    .page3Img1 img,.page3Img2 img{
-        height: 120px;
-        width: 80%;
-        margin: 0;
-    }
-    .col-lg-8{
-        padding: 0;
-        margin: 0;
-    }
-    #page3Txt{
-        padding: 0;
-        margin: 0;
-    }
-    #appet img{
-        height: 300px;
-        width: 85%;
-        
-    }
-    #page3Txt h2{
-        font-size: 2.3rem;
-    }
-    #page3Txt p,#page3Txt button{
-        display: none;
-    }
-    #appet h4,#page3Img h4{
-        
-        font-size: 1.1rem;
-        
-    }
-    .col-lg-8 p,.col-lg-8 button{
-        display: block;
-        font-size: 1rem;
-        margin-top: 20px;
-    }
-    
-}
-@media only screen and (max-width:768px){
-    .page3Img1 img,.page3Img2 img{
-        height: 170px;
-        width: 60%;
-        margin-top: 25px;
-    }
-    #appet img{
-        height: 170px;
-        width: 60%;
-        margin-top: 25px;
-    }
-    #page3Txt h2{
-        text-align: center;
-    }
-    .page3Img1 img,.page3Img2 img{
-        height: 150px;
-        width: 70%;
-    }
-    #appet img{
-        height: 150px;
-        width: 70%;
-        
-    }
-    #page3Txt h2{
-        font-size: 1.8rem ;
-    }
-    #appet h4,#page3Img h4{
-        
-        font-size: 0.9rem;
-        
-    }
-    .col-lg-8 p,.col-lg-8 button{
+  }
+  .page3Img1 img,
+  .page3Img2 img {
+    height: 150px;
+    width: 70%;
+  }
+  #appet img {
+    height: 150px;
+    width: 70%;
+  }
+  #page3Txt h2 {
+    font-size: 1.8rem;
+  }
+  #appet h4,
+  #page3Img h4 {
+    font-size: 0.9rem;
+  }
+  .col-lg-8 p,
+  .col-lg-8 button {
     margin-top: 15px;
-        font-size: 0.8rem;
-        
-    }
-    .col-lg-8 button{
-        margin-top: 5px;
-    }
+    font-size: 0.8rem;
+  }
+  .col-lg-8 button {
+    margin-top: 5px;
+  }
 }
 
-@media only screen and (max-width:340px){
-    #page3Txt h2{
-        font-size: 1.5rem ;
-    }
-    #appet h4,#page3Img h4{
-        
-        font-size: 0.8rem;
-        
-    }
-    .col-lg-8 p,.col-lg-8 button{
-        
-            font-size: 0.7rem;
-            
-        }
+@media only screen and (max-width: 340px) {
+  #page3Txt h2 {
+    font-size: 1.5rem;
+  }
+  #appet h4,
+  #page3Img h4 {
+    font-size: 0.8rem;
+  }
+  .col-lg-8 p,
+  .col-lg-8 button {
+    font-size: 0.7rem;
+  }
 }
 
 /* Page 3 Css end  */
 
-
-
 /* Page 4 Css Begins Here -----------------------------  */
-#page4{
-    padding: 7% 0 6% 0;
-    background-color: black;
+#page4 {
+  padding: 7% 0 6% 0;
+  background-color: black;
+}
+#testimonial-carousel {
+  padding: 5% 15%;
+}
+#page4 h1 {
+  color: white;
+  text-align: center;
+  padding-bottom: 3%;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 2.5rem;
+}
+.card-title {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+.card-text {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.1rem;
+}
 
+.card-img-top {
+  width: 22%;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 5%;
+  margin-bottom: 2%;
 }
-#testimonial-carousel{
-    padding: 5% 15%;
-}
-#page4 h1{
-    color: white;
-    text-align: center;
-    padding-bottom:3% ;
-    font-family:'Hammersmith One', sans-serif ;
-    font-size: 2.5rem;
-}
-.card-title{
-    font-family:'Hammersmith One', sans-serif ;
-    font-size: 1.5rem;
-    font-weight: 100;
-}
-.card-text{
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 1.1rem;
+.card {
+  display: block;
+  border: 0;
+  border-radius: 0;
+  color: white;
+  background-color: black;
+  box-shadow: 3px 3px 15px rgb(99, 99, 99);
+  margin: 2% 6%;
 }
 
-.card-img-top{
-    width: 22%;
-    height: 60px;
-    border-radius: 50%;
-    margin-left: 5%;
-    margin-bottom: 2%;
-}
-.card{
+@media only screen and (min-width: 992px) {
+  #caro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .carousel-item {
+    margin-right: 0;
     display: block;
-    border: 0;
-    border-radius: 0;
-    color: white;
-    background-color: black;
-    box-shadow: 3px 3px 15px rgb(99, 99, 99);
-    margin: 2% 6%;
+    flex: 0 0 calc(100% / 3);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .card {
+    box-shadow: none;
+  }
+  .carousel-item {
+    padding: 0 15%;
+  }
+  .card-img-top {
+    height: 80px;
+  }
+  #page4 h1 {
+    font-size: 2.3rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .card-text {
+    font-size: 0.8rem;
+  }
+  #page4 h1 {
+    font-size: 2rem;
+  }
+  .card-img-top {
+    height: 65px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .card-text {
+    font-size: 0.8rem;
+  }
+  .card-title {
+    font-size: 1.3rem;
+  }
+  .carousel-item {
+    padding: 0 8%;
+  }
+  #page4 h1 {
+    font-size: 1.7rem;
+  }
+  .card-img-top {
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  #page4 h1 {
+    font-size: 1.5rem;
+  }
+  .carousel-item {
+    padding: 0;
+  }
+  #page4 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
 }
 
+/*----------------- Page 4 CSS end -------------------------- */
 
-@media only screen and (min-width:992px){
-    #caro{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }
-    .carousel-item{
-        margin-right: 0;
-        display: block;
-        flex: 0 0 calc(100%/3);
-        
-    }
+/*----------------- Page 5 CSS start  -------------------------- */
+#page5 {
+  background-color: #ffeede;
+  /* height: 100vh; */
+  display: flex;
+  width: 100%;
 }
-@media only screen and (max-width:992px){
-    .card{
-        box-shadow: none;
-    }
-    .carousel-item{
-        padding: 0 15%;
-    }
-    .card-img-top{
-        height: 80px;
-    }
-    #page4 h1{
-        font-size: 2.3rem;
-    }
-    .card-text{
-        font-size: 0.9rem;
-    }
-    
+#page5-left {
+  width: 40%;
 }
-@media only screen and (max-width:768px){
-    .card-text{
-        font-size: 0.8rem;
-    }
-    #page4 h1{
-        font-size: 2rem;
-    }
-    .card-img-top{
-        height: 65px;
-        
-    }
+#page5-left img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
 }
-@media only screen and (max-width:600px){
-    .card-text{
-        font-size: 0.8rem;
-    }
-    .card-title{
-        font-size:1.3rem ;
-    }
-    .carousel-item{
-        padding: 0 8%;
-    }
-    #page4 h1{
-        font-size: 1.7rem;
-    }
-    .card-img-top{
-        height: 50px;
-        
-    }
+#page5-right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 8% 13%;
 }
-@media only screen and (max-width:440px){
-    #page4 h1{
-        font-size: 1.5rem;
-        
-    }
-    .carousel-item{
-        padding: 0;
-    }
-    #page4{
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
+#pg5-heading {
+  font-family: "Hammersmith One", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20%;
+}
+#pg5-heading h2 {
+  font-size: 2.5rem;
+}
+#page5-right h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+#page5-right h4 {
+  text-transform: uppercase;
+  margin-bottom: 13%;
+  font-size: 1.2rem;
+}
+#pg5-responsive {
+  display: none;
+}
+/* responsive format of page 5 */
+@media only screen and (max-width: 992px) {
+  #pg5-heading {
+    font-family: "Hammersmith One", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20%;
+  }
+  #pg5-heading h2 {
+    font-size: 2.3rem;
+  }
+  #page5-right h3 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+  }
+  #page5-right h4 {
+    text-transform: uppercase;
+    margin-bottom: 13%;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #pg5-heading {
+    font-family: "Hammersmith One", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20%;
+  }
+  #pg5-heading h2 {
+    font-size: 1.5rem;
+  }
+  #page5-right h3 {
+    text-transform: uppercase;
+    font-size: 1.07rem;
+  }
+  #page5-right h4 {
+    text-transform: uppercase;
+    margin-bottom: 13%;
+    font-size: 0.8rem;
+  }
 }
 
-/* Page 4 CSS end -------------------------- */
-
-#page5{
-    height: 100vh;
+@media only screen and (max-width: 600px) {
+  #page5-left {
+    width: 0;
+  }
+  #page5 {
+    display: block;
     width: 100%;
-    background-color: #ffeede;
+    text-align: center;
+  }
+  #page5-right {
+    display: block;
+    width: 100%;
+    padding-block: 1%;
+  }
+  #pg5-normal {
+    display: none;
+  }
+  #pg5-responsive {
+    display: block;
+  }
+  #pg5-responsive #pg5-heading h2{
+    margin-bottom: 5%;
+  }
+  #pg5-responsive #pg5-data{
+    border-bottom: 1px solid black;
+    margin-bottom:3% ;
+  }
+  #pg5-responsive #pg5-data h4{
+    margin-bottom: 5%;
+    font-weight: 500;
 }
-
+#pg5-timing{
+    font-family: "Hammersmith One", sans-serif;
+    margin-block: 15%;
+}
+#pg5-timing h3{
+    font-weight: 500;
+}
+#terms{
+    font-family: "Hammersmith One", sans-serif;
+}
+#terms h5{
+    font-size: 0.6rem;
+}
+}
