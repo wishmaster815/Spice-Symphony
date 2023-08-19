@@ -4,9 +4,9 @@
   padding: 0;
   cursor: default;
 }
-/* html{
+html{
   background-color: #ffeede;
-} */
+} 
 /* ---------- Page 1 CSS ----------  */
 #page1 {
   height: 100vh;
