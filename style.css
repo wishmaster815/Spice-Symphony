@@ -4,9 +4,9 @@
   padding: 0;
   cursor: default;
 }
-html{
+/* html{
   background-color: #ffeede;
-}
+} */
 /* ---------- Page 1 CSS ----------  */
 #page1 {
   height: 100vh;
@@ -657,13 +657,22 @@ html{
   }
   #pg5res-head h2{
     font-size: 1.5rem;
-    margin-bottom: 5%;
-    padding-bottom: 2%;
-    border-bottom: 1px solid black;
+    margin-bottom:12%;
+    /* padding-bottom: 2%; */
+    /* border-bottom: 1px solid black; */
   }
   .pg5res-data{
     text-transform: uppercase;
-    margin-bottom: 7%;
+    /* margin-bottom: 7%; */
+    margin-bottom:12%;
+  }
+  .pg5res-data #data-elem{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  .pg5res-data #data-elem img{
+    margin-right: 2%;
   }
   .pg5res-data h3{
     font-size: 1rem;
